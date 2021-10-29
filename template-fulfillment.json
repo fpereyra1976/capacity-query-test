@@ -1,0 +1,109 @@
+{
+		"routes": [
+	           {
+                        "steps": [
+                            {
+                                "sequence": 1,
+                                "type": "operational",
+                                "point": {
+                                    "type": "facility",
+                                    "id": "ARBA01"
+                                },
+                                "cost": {
+                                    "value": 0
+                                },
+                                "time": {
+                                    "departures": [
+                                        {
+                                            "estimated_time_date": "2021-09-23T10:00:00-03:00",
+                                            "processing_time": "0400",
+                                            "type": "cpt"
+                                        }
+                                    ],
+                                    "initial_date": "2021-09-23T06:00:00-03:00",
+                                    "final_date": "2021-09-23T10:00:00-03:00"
+                                },
+                                "capacity": "normal"
+                            },
+                            {
+                                "sequence": 2,
+                                "type": "transitional",
+                                "service": ":service_id",
+                                "mile": "last_mile",
+                                "channel": "OCA291",
+                                "origin_zone": {
+                                    "path": []
+                                },
+                                "destination_zone": {
+                                    "path": [
+                                        ":tzone_id",
+                                        ":country_id"
+                                    ]
+                                },
+                                "cost": {
+                                    "value": 0
+                                },
+                                "time": {
+                                    "departures": null,
+                                    "initial_date": "2021-09-23T10:00:00-03:00",
+                                    "final_date": "2021-09-27T12:00:00-03:00"
+                                },
+                                "capacity": "normal"
+                            },
+                            {
+                                "sequence": 3,
+                                "type": "address",
+                                "address": {
+                                    "zip_code": "4704",
+                                    "country_id": ":country_id"
+                                },
+                                "cost": {
+                                    "value": 0
+                                },
+                                "time": {
+                                    "departures": null,
+                                    "initial_date": "2021-09-27T12:00:00-03:00",
+                                    "final_date": "2021-09-27T12:00:00-03:00",
+                                    "carrier_date": ":carrier_dateT12:00:00-03:00"
+                                },
+                                "capacity": "normal"
+                            }
+                        ],
+                "scope": "MELI1",
+                "cost": {
+                    "value": 362.49
+                },
+                "time": {
+                    "id": "",
+                    "type": "known",
+                    "date": "2021-09-14T00:00:00.000-03:00",
+                    "unit": "hour",
+                    "offset": {
+                        "date": null,
+                        "shipping": null
+                    },
+                    "time_frame": {
+                        "from": null,
+                        "to": null
+                    },
+                    "buffering_date": "",
+                    "pay_before": "2021-09-14T12:15:00.000-03:00",
+                    "shipping": 0,
+                    "handling": 0,
+                    "schedule": 0,
+                    "estimated_delivery_dates": [
+                        "2021-09-14T00:00:00.000-03:00"
+                    ],
+                    "extended_delivery_dates": [
+                        "2021-09-15T00:00:00.000-03:00",
+                        "2021-09-16T00:00:00.000-03:00",
+                        "2021-09-17T00:00:00.000-03:00"
+                    ],
+                    "working_days_in_transit": 0
+                },
+                "restrictions": [],
+                "capacity": "normal",
+                "buffering": 0
+            }
+		]
+}

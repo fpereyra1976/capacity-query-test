@@ -1,0 +1,74 @@
+{
+  "routes": [
+    {
+      "steps": [
+        {
+          "sequence": 1,
+          "type": "address",
+          "address": {
+            "zip_code": "09930971",
+            "country_id": ":country_id"
+          }
+        },
+        {
+          "sequence": 2,
+          "type": "transitional",
+          "service": ":service_id",
+          "mile": "last_mile",
+          "channel": "",
+          "destination_zone": {
+            "path": [
+              ":tzone_id"
+            ]
+          }
+        },
+        {
+          "sequence": 3,
+          "type": "address",
+          "address": {
+            "zip_code": "02435000",
+            "country_id": ":country_id"
+          },
+          "time": {
+            "initial_date": "2021-09-21T12:00:00-03:00",
+            "final_date": "2021-09-21T12:00:00-03:00",
+            "carrier_date": ":carrier_dateT12:00:00-03:00"
+          }
+        }
+      ],
+      "scope": "",
+      "cost": {
+        "value": 0
+      },
+      "time": {
+        "id": "",
+        "type": "known",
+        "date": "2021-09-21T00:00:00.000-03:00",
+        "unit": "hour",
+        "offset": {
+          "date": null,
+          "shipping": null
+        },
+        "time_frame": {
+          "from": null,
+          "to": null
+        },
+        "pay_before": "2021-09-21T13:00:00.000-03:00",
+        "shipping": 0,
+        "handling": 24,
+        "schedule": 0,
+        "estimated_delivery_dates": [
+          "2021-09-21T00:00:00.000-03:00"
+        ],
+        "extended_delivery_dates": [
+          "2021-09-22T00:00:00.000-03:00",
+          "2021-09-23T00:00:00.000-03:00",
+          "2021-09-24T00:00:00.000-03:00"
+        ],
+        "working_days_in_transit": 1
+      },
+      "restrictions": []
+    }
+  ]
+}
+
