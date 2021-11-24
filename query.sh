@@ -3,7 +3,7 @@
 # Enviroments
 transition='https://internal-api.mercadolibre.com/capacity-transition/routes/query'
 stage='https://internal-api.mercadolibre.com/capacity-stage/routes/query'
-localhost='https://localhost:8080/routes/query'
+localhost='http://localhost:8080/routes/query'
 production='https://internal-api.mercadolibre.com/capacity-location/routes/query'
 
 # Default Shipment settings
@@ -36,9 +36,11 @@ select-server() {
 
 select-logistictype() {
 	case $1	in
-		full)	TEMPLATE_FILE=template-fulfillment.json 
+		full)		TEMPLATE_FILE=template-fulfillment.json 
 			;;
-		self)	TEMPLATE_FILE=template-self_service.json 
+		self)		TEMPLATE_FILE=template-self_service.json 
+			;;
+		flexistics)	TEMPLATE_FILE=template-flexistics.json
 			;;
 	esac
 }
